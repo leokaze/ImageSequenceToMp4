@@ -20,4 +20,6 @@ set converterPath="YOUR_FOLDER_PATH\converter.py
 
 El funcionamiento es simple, solo debes arrastrar cualquiera de los archivos de la secuencia de imágenes y el video se codificará en la carpeta superior a la carpeta original.
 
-https://github.com/leokaze/ImageSequenceToMp4/blob/main/videos/example.mp4
+
+https://github.com/leokaze/ImageSequenceToMp4/assets/12009166/61174c0f-5e91-4a43-81dd-69741a651b86
+
