@@ -1,5 +1,4 @@
 
-# obtener e imprimir los argumentos recividos
 print("********************************Start of the converter************************")
 
 import sys
@@ -17,7 +16,6 @@ print(filename)
 # Buscar todos los dígitos al final del nombre del archivo
 match = re.search(r'\d+$', filename)
 
-# Si se encontraron dígitos, imprimir la cantidad
 if match:
     num_digits = len(match.group())
     # convertir la secuencia de imágenes en un video mp4
@@ -28,7 +26,6 @@ if match:
     input_path = os.path.dirname(args) + '/' + input_filename + '%0' + str(num_digits) + 'd' + extension
     output_path = os.path.dirname(args).split('\\')
     output_path = '/'.join(output_path[0:-1]) + '/' + video_filename + '.mp4'
-    # output_path = os.path.dirname(args) + '/' + video_filename + '.mp4'
     (
         ffmpeg
         .input(input_path, framerate=24)
