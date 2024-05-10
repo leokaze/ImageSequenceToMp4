@@ -11,11 +11,13 @@ pip install ffmpeg-python
 ## Configuración
 
 Antes de empezar primero es necesario configurar la dirección del script en el archivo "SequenceToMp4.cmd" en la linea 2:
-
-´´´batch
+`
+```batch
 set converterPath="YOUR_FOLDER_PATH\converter.py
-´´´
+```
 
 ## Funcionamiento
 
 El funcionamiento es simple, solo debes arrastrar cualquiera de los archivos de la secuencia de imágenes y el video se codificará en la carpeta superior a la carpeta original.
+
+https://github.com/leokaze/ImageSequenceToMp4/blob/main/videos/example.webm
