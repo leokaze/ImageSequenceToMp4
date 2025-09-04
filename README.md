@@ -5,7 +5,13 @@ Este script ayuda a convertir una secuencia de imágenes a un archivo MP4 utiliz
 Es necesario instalar la librería ffmpeg-python para su funcionamiento
 
 ```batch
+winget install ffmpeg
 pip install ffmpeg-python
+```
+
+Asegúrate que "ffmpeg" esté registrado en el PATH del sistema de windows. Para verificar si esta installado puedes utilizar el comando:
+```batch
+ffmpeg -version
 ```
 
 ## Configuración

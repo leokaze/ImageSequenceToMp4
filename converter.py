@@ -18,6 +18,7 @@ match = re.search(r'\d+$', filename)
 
 if match:
     num_digits = len(match.group())
+    start_frame = int(match.group())
     # convertir la secuencia de imágenes en un video mp4
     input_filename = filename[0:-num_digits]
     video_filename = input_filename
@@ -28,7 +29,7 @@ if match:
     output_path = '/'.join(output_path[0:-1]) + '/' + video_filename + '.mp4'
     (
         ffmpeg
-        .input(input_path, framerate=24)
+        .input(input_path, framerate=24, start_number=start_frame)
         .output(output_path, vcodec='libx264', pix_fmt='yuv420p', vb='2500k', preset='slow')
         .run()
     )
