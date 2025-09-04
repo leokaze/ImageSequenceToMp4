@@ -30,7 +30,7 @@ if match:
     (
         ffmpeg
         .input(input_path, framerate=24, start_number=start_frame)
-        .output(output_path, vcodec='libx264', pix_fmt='yuv420p', vb='2500k', preset='slow')
+        .output(output_path, vcodec='libx264', pix_fmt='yuv420p', vb='4000k', preset='slow')
         .run()
     )
     print("MP4 file created successfully")
