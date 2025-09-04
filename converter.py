@@ -9,6 +9,7 @@ import ffmpeg
 args = ' '.join(sys.argv[1:])
 filename_with_extension = os.path.basename(args)
 filename, extension = os.path.splitext(filename_with_extension)
+ffmpeg_path = r'[Path\to\ffmpeg\ffmpeg.exe]'
 
 print(args)
 print(filename)
@@ -31,7 +32,7 @@ if match:
         ffmpeg
         .input(input_path, framerate=24, start_number=start_frame)
         .output(output_path, vcodec='libx264', pix_fmt='yuv420p', vb='4000k', preset='slow')
-        .run()
+        .run(cmd=ffmpeg_path)
     )
     print("MP4 file created successfully")
 else:

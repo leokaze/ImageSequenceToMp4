@@ -29,3 +29,6 @@ El funcionamiento es simple, solo debes arrastrar cualquiera de los archivos de 
 
 https://github.com/leokaze/ImageSequenceToMp4/assets/12009166/61174c0f-5e91-4a43-81dd-69741a651b86
 
+## Cambios
+
+He agregado una variable para el ejecutable de ffmpeg.exe ya que al instalar ffmpeg mediante winget este no se veía reflejado en el PATH del sistema. A causa de esto el script no reconocía el ejecutable y solo mostraba un error. Al final tuve que copiar los ejecutables a una carpeta en el sistema y especificar este directamente en el script.
